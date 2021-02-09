@@ -1,0 +1,69 @@
+/* Menu List Area css
+============================================================================================ */
+.menu_area{
+
+}
+.menu_inner{
+    .col-lg-5{
+        .menu_list:last-child{
+            margin-bottom: 0;
+            @media (max-width: 991px) {
+                margin-bottom: 50;
+            }
+        }
+    }
+	.menu_list{
+        margin-bottom: 70px;
+        &.res-mr{
+            @media (max-width: 991px) {
+                margin-top: 50px;
+            }
+        }
+        h1{
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+		p{
+			margin-bottom: 0px;
+			font-size: 14px;
+		}
+		.list{
+			li{
+				padding-bottom: 30px;
+				&:last-child {
+					padding-bottom: 0;
+				}
+				h4{
+					font-size: 18px;
+					margin-bottom: 12px;
+					font-weight: 300;
+					@media (max-width: 420px) {
+						font-size: 16px;
+					}
+					&:after {
+						margin-right: 15px;
+						content: '.......................';
+						float: none;
+						@media (max-width: 1024px) {
+							content: '............';
+						}
+						@media (max-width: 991px) {
+							content: '................................';
+						}
+					}
+					span{
+						float: right;
+						font-weight: 700;
+					}
+				}
+				p{
+					@media (max-width: 420px) {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+/* End Menu List Area css
+============================================================================================ */

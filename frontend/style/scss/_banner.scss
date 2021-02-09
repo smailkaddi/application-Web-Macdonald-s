@@ -1,0 +1,253 @@
+/* Home Banner Area css
+============================================================================================ */
+
+.home_banner_area {
+  z-index: 1;
+  background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;
+  background-size: cover;
+  @media (max-width: 767px){
+    background: none;
+   }
+  .banner_inner{
+    .fullscreen{
+      @media (max-width: 767px){
+       height: 394px!important;
+      }
+    }
+  }
+  &.overlay{
+    &:after{
+      background: #000;
+      opacity: .2;
+    }
+  }
+}
+
+.banner-bottom {
+  margin-top: -340px;
+  @media (max-width:1680px){
+    margin-top: -392px;
+  }
+  @media (max-width:1500px){
+    margin-top: -421px;
+  }
+  @media (max-width:1200px){
+    margin-top: -449px;
+  }
+  @media (max-width:1024px){
+    margin-top: -555px;
+  }
+  @media (max-width:991px){
+    margin-top: -395px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .video-popup{
+    padding-left: 25%;
+    @media (max-width:1024px){
+      display: none!important;
+    }
+    .watch{
+      color: #fff;
+      margin-top: 25px;
+      padding-left: 15px;
+      h6{
+        font-size: 16px;
+        font-family: $primary-font;
+        font-weight: 500;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+      }
+    }
+  }
+  .banner_content {
+    background: #fff;
+    padding: 90px 70px;
+    @media (max-width:991px){
+      padding: 80px 70px;
+    }
+    @media (max-width:991px){
+      padding: 80px 30px;
+    }
+    .top-text{
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: $title-color;
+    }
+    h1 {
+      margin-bottom: 30px;
+      font-size: 42px;
+    }
+    p{
+      margin-bottom: 0;
+    }
+    .banner-btn{
+      margin-left: 40%;
+      @media (max-width:1500px){
+        margin-left: 25%;
+      }
+      @media (max-width:1380px){
+        margin-left: 10%;
+      }
+      @media (max-width:1200px){
+        margin-left: 0;
+      }
+      @media (max-width:991px){
+        margin-top: 30px;
+      }
+      .primary-btn{
+        @media (max-width:1190px){
+          padding: 0 20px;
+        }
+        @media (max-width:1024px){
+          padding: 0 10px;
+        }
+        @media (max-width:991px){
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+}
+
+// common banner css // 
+.home_banner_area.common-banner{
+  background: url(../img/banner/common-banner.jpg) no-repeat scroll center center;
+  background-size: cover;
+  .banner_inner{
+    .fullscreen{
+      height: 540px!important;
+    }
+  }
+
+}
+.banner-bottom.common-bottom-banner{
+  margin-top: -316px;
+  @media (max-width:1680px){
+    margin-top: -392px;
+  }
+  @media (max-width:1500px){
+    margin-top: -342px;
+  }
+  @media (max-width:1200px){
+    margin-top: -372px;
+  }
+  @media (max-width:1024px){
+    margin-top: -400px;
+  }
+  @media (max-width:991px){
+    margin-top: -375px;
+    border-bottom: 1px solid #eeeeee;
+  }
+}
+.banner_content{
+  .page-link-wrap{
+    margin-left: 35%;
+    @media (max-width:1680px){
+      margin-left: 15%;
+      min-width: 230px;
+    }
+    @media (max-width:1440px){
+      margin-left: 10%;
+    }
+    @media (max-width:1380px){
+      margin-left: 0;
+    }
+    // @media (max-width:1200px){
+      
+    // }
+    @media (max-width:991px){
+      margin-top: 30px;
+    }
+    .page_link {
+      background: $primary-color;
+      text-align: center;
+      line-height: 50px;
+      color: #fff;
+      display: inline-block;
+      padding: 0 20px;
+      box-shadow: 0 20px 20px rgba(244, 47, 44, 0.1);
+      @media (max-width:1200px){
+        padding: 0 15px;
+      }
+      a {
+        font-size: 14px;
+        color: #fff;
+        font-family: $primary-font;
+        margin-right: 30px;
+        position: relative;
+        text-transform: capitalize;
+        &:before {
+          content: "\f178";
+          font: normal normal normal 14px/1 FontAwesome;
+          position: absolute;
+          right: -25px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &:last-child {
+          margin-right: 0px;
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* End Home Banner Area css
+============================================================================================ */
+
+/* Start Blog Banner Area css
+============================================================================================ */
+.blog_banner {
+  min-height: 780px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-bottom: 0px;
+  .banner_inner {
+    background: #04091e;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 780px;
+    z-index: 1;
+    .overlay {
+      background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+      opacity: 0.5;
+      height: 125%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      z-index: -1;
+    }
+    .blog_b_text {
+      max-width: 700px;
+      margin: auto;
+      color: #fff;
+      margin-top: 40px;
+      h2 {
+        font-size: 60px;
+        font-weight: 500;
+        font-family: $primary-font;
+        line-height: 66px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 35px;
+      }
+      .white_bg_btn {
+        line-height: 42px;
+        padding: 0px 45px;
+      }
+    }
+  }
+}
+
+/* End Blog Banner Area css
+============================================================================================ */

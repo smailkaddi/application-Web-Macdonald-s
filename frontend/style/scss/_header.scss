@@ -1,0 +1,104 @@
+//header_area css
+
+.menu-trigger {
+	display: inline-block;
+	cursor: pointer;
+	position: fixed;
+	top: 18px;
+	right: 20px;
+	z-index: 999;
+	span {
+		height: 5px;
+		width: 30px;
+		background: $title-color;
+		display: block;
+		margin: 4px;
+		border-radius: 2px;
+	}
+	@media (max-width: 1920px) {
+		display: none;
+	}
+	@media (max-width: 570px) {
+		display: block;
+		background: #fff;
+		padding: 10px;
+	}
+}
+.fixed-menu {
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 999;
+	width: 150px;
+	background: #fff;
+	height: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+	box-shadow: -6px 0px 20px rgba(0, 0, 0, 0.1);
+	@include transition();
+	@media (max-width: 570px) {
+		margin-right: -150px;
+	}
+	&.active {
+		margin-right: 0px;
+	}
+	.menu-close {
+		padding: 5px 15px;
+		display: inline-block;
+		cursor: pointer;
+		@media (max-width: 1920px) {
+			display: none;
+		}
+		@media (max-width: 570px) {
+			display: block;
+		}
+		i {
+			font-size: 25px;
+		}
+	}
+	.menu-header {
+		padding: 30px 0;
+	}
+	.nav-wraper {
+		.navbar {
+			padding: 0;
+			.navbar-nav {
+				width: 100%;
+				.nav-item {
+					display: block;
+					&.submenu {
+						.dropdown-menu {
+							border: none;
+							margin-left: 30px;
+							.nav-item {
+								padding: 0;
+							}
+						}
+					}
+					.nav-link {
+						color: #000000;
+						text-transform: capitalize;
+						font-size: 12px;
+						padding: 10px 0px 10px 20px;
+						display: block;
+						text-align: left;
+						@include transition();
+						img {
+							padding-right: 15px;
+							@include transition();
+						}
+						&:hover,
+						&.active {
+							background: $primary-color;
+							color: #fff;
+							box-shadow: 0 20px 20px rgba(244, 47, 44, 0.1);
+							img {
+								@include filter(brightness(0) invert(1));
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

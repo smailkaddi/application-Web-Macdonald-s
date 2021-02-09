@@ -1,0 +1,170 @@
+.section_gap {
+    padding: 150px 0;
+    @media (max-width: 991px) {
+        padding: 80px 0;
+    }
+}
+
+.section_gap_top {
+    padding-top: 150px;
+    @media (max-width: 991px) {
+        padding-top: 80px;
+    }
+}
+
+.section_gap_bottom {
+    padding-bottom: 150px;
+    @media (max-width: 991px) {
+        padding-bottom: 80px;
+    }
+}
+.no-padding{
+    padding: 0;
+}
+.lite_bg{
+    background: #f9f9f9;
+}
+
+/* Main Title Area css
+============================================================================================ */
+
+.main_title {
+    text-align: center;
+    margin-bottom: 75px;
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 0px;
+        font-weight: 300;
+    }
+}
+
+/* End Main Title Area css
+============================================================================================ */
+
+/* Start Gradient Area css
+============================================================================================ */
+
+.gradient-bg {
+    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.gradient-bg2 {
+    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.gradient-color {
+	@include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* End Gradient Area css
+============================================================================================ */
+
+/* Start Buttons Area css
+============================================================================================ */
+
+.primary-btn {
+    position: relative;
+	display: inline-block;
+    padding: 0px 30px;
+    color: $title-color;
+    background: #fff;
+    font-family: $primary-font;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 50px;
+    border: 1px solid $primary-color;
+    border-radius: 2px;
+    outline: none !important;
+    text-align: center;
+    cursor: pointer;
+    @include transition();
+    &:hover {
+        color: #fff;
+        box-shadow: 0 20px 20px rgba(244, 47, 44, 0.1);
+        border: 1px solid transparent;
+        background: $primary-color;
+       
+    }
+}
+
+/* End Buttons Area css
+============================================================================================ */
+
+
+/* Start Overlay css
+============================================================================================ */
+.overlay{
+    position: relative;
+}
+.overlay:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    z-index: -1;
+}
+
+/* End Overlay css
+============================================================================================ */
+
+/* Start Video Play css
+============================================================================================ */
+
+.video-play-button {
+    position: relative;
+    box-sizing: content-box;
+    display: inline-block;
+    width: 32px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 46px 8px 18px 28px;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include transform(translate(-50%, -50%));
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: #fff;
+        border-radius: 50%;
+    }
+    &:before {
+        z-index: 0;
+        @include animation(pulse-border 2000ms ease-out infinite);
+    }
+    &:after {
+        z-index: 1;
+        @include transition(all 200ms ease);
+    }
+    span {
+        display: block;
+        position: relative;
+        margin-top: -5px;
+        z-index: 999;
+    }
+}
+
+@include keyframes(pulse-border) {
+    0% {
+        @include transform(translate(-50%, -50%) translateZ(0) scale(1));
+        opacity: .7;
+    }
+    100% {
+        @include transform(translate(-50%, -50%) translateZ(0) scale(1.5));
+        opacity: 0.1;
+    }
+}
+/* End Video Play css
+============================================================================================ */

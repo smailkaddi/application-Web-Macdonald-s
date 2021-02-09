@@ -1,0 +1,214 @@
+/*============== footer-area css ===============*/
+
+.footer-area{
+    background: url(../img/footer-bg.jpg) center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    padding: 100px 0;
+    &.overlay{
+        &:after{
+            background: #000000;
+            opacity: .75;
+        }
+    }
+    h6{
+        color:#fff;
+        margin-bottom:25px;
+        font-size:18px;
+        font-weight:600;
+    }
+    @media (max-width:991px){
+        .col-lg-2.col-md-4:nth-child(4), .col-md-6{
+            .single-footer-widget{
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media (max-width:570px){
+        .col-lg-2.col-md-4.col-sm-6{
+            width: 50%;
+        }
+    }
+}	
+.footer-bottom{
+    margin-top: 60px;
+    @media (max-width:991px){
+        text-align: center;
+    }
+}
+.copy-right-text{
+    i,a{
+        color:$primary-color;
+    }
+}
+
+.instafeed {
+    margin: -5px;
+    li {
+        overflow: hidden;
+        width: 25%;
+        img {
+            margin: 5px;
+        }
+    }
+}
+
+
+.social-icons{
+    @media (max-width:991px){
+        margin-top: 30px;
+    }
+    a{
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        display: inline-block;
+        &:hover{
+            background: $primary-color;
+        }
+    }
+    
+    i{
+        color:#ffffff;
+        @include transition();
+
+    }
+}
+
+
+.single-footer-widget {
+    @media (max-width:991px){
+        margin-bottom: 40px;
+    }
+    .form-inline{
+        display: inline-block;
+        width: 100%;
+    }
+    input {
+        border: none;
+        width:80% !important;
+        font-weight: 300;
+        background: rgba(255, 255, 255, 0.2);
+        color:#fff;
+        padding-left:20px;
+        border-radius: 0;
+        font-size: 14px;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+        @include placeholder{
+            color: #fff;
+            opacity: .5;
+        }
+    }
+
+    .list{
+        li{
+            a{
+                line-height: 25px;
+                display: inline-block;
+                color: #777777;
+                transition: all 0.3s linear;
+                margin-bottom: 13px;
+				font-size: 14px;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .bb-btn{
+        background: $primary-color;
+        color:#fff;
+        font-weight:300;
+        border-radius:0;
+        z-index:9999;
+        cursor:pointer;
+    }
+
+
+
+    .info {
+            position:absolute;
+            margin-top:5%;
+            color: #fff;
+            font-size: 12px;
+            &.valid {
+                color: green;
+            }
+            &.error {
+                color: red;
+            }
+
+    }
+
+    .click-btn{
+        background: $primary-color;
+        color: #fff;
+        border-radius: 0;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 7px 12px;
+        border:0;
+    }
+
+    ::-moz-selection { /* Code for Firefox */
+        background-color: #191919!important;
+        color: $text-color;
+    }
+    ::selection {
+        background-color: #191919!important;
+        color: $text-color;
+    }
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    $text-color;
+        font-weight: 300;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    $text-color;
+       opacity:  1;
+       font-weight: 300;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    $text-color;
+       opacity:  1;
+       font-weight: 300;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    $text-color;
+       font-weight: 300;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+       color:    $text-color;
+       font-weight: 300;
+    }
+
+}
+    
+
+.footer-text{
+    a,i{
+        color:$primary-color;
+    }
+}
+
+// for book table page //
+
+#book-table{
+    .footer-area{
+        margin-top: 300px;
+        @media (max-width:991px){
+            margin-top: 160px;
+        }
+    }
+}
+
+
+/*============== End-area css ===============*/
