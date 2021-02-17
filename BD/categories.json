@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "601feb0c2eae6906444164dc"
+  },
+  "nom": "Menu"
+},{
+  "_id": {
+    "$oid": "601feb172eae6906444164dd"
+  },
+  "nom": "Sandwich"
+},{
+  "_id": {
+    "$oid": "601feb222eae6906444164de"
+  },
+  "nom": "Petit faim"
+},{
+  "_id": {
+    "$oid": "601feb2b2eae6906444164df"
+  },
+  "nom": "Salade"
+},{
+  "_id": {
+    "$oid": "601feb332eae6906444164e0"
+  },
+  "nom": "Dessert"
+},{
+  "_id": {
+    "$oid": "601feb3b2eae6906444164e1"
+  },
+  "nom": "Boisson"
+},{
+  "_id": {
+    "$oid": "601feb472eae6906444164e2"
+  },
+  "nom": "Frite"
+},{
+  "_id": {
+    "$oid": "601feb502eae6906444164e3"
+  },
+  "nom": "Sauce"
+}]

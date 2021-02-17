@@ -1,0 +1,15 @@
+.form-check-input[type=checkbox].filled-in:checked+label:after, 
+label.btn input[type=checkbox].filled-in:checked+label:after {
+  border: 2px solid #4285f4;
+  background-color: #4285f4;
+}
+.mb-4-5 {
+  margin-bottom: 24px;
+}.form-check-input[type=checkbox].filled-in:checked+label:after, 
+label.btn input[type=checkbox].filled-in:checked+label:after {
+  border: 2px solid #4285f4;
+  background-color: #4285f4;
+}
+.mb-4-5 {
+  margin-bottom: 24px;
+}

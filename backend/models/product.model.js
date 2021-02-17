@@ -11,7 +11,7 @@ const Product = new Schema({
     prix: {
         type: Number,
         required: true,
-       
+
     },
     ingrediens: {
         type: String,

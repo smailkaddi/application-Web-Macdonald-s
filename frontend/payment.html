@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="style/css/payment.css">
+  <link rel="stylesheet" href="style/css/style.css">
+  <link rel="stylesheet" href="style/css2/style.css">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+  <div class="menu-trigger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <header class="fixed-menu">
+    <span class="menu-close"><i class="fa fa-times"></i></span>
+    <div class="menu-header">
+      <div class="logo d-flex justify-content-center">
+        <img src="img/logo.png" alt="">
+      </div>
+    </div>
+    <div class="nav-wraper">
+      <div class="navbar">
+        <ul class="navbar-nav">
+          <div class="content">
+            <li class="nav-item"><a class="nav-link  " href="index.html"><img src="img/header/nav-icon1.png"
+                  alt=""><span class="home">home</span> </a></li>
+
+            <li class="nav-item"><a class="nav-link active" href="menu.html"><img src="img/header/nav-icon3.png"
+                  alt=""><span class="menu">Menu</span></a></li>
+
+            <li class="nav-item"><a class="nav-link " href="payment.html"><img src="img/header/nav-icon2.png"
+                  alt=""><span class="Panier">Panier</span> </a></li>
+
+            <div class="container">
+              <div class="langWrap" style="display: flex; margin-top: 10px;">
+                <a style="padding:10px;" href="#" language='english' class="active">EN</a>
+                <a style="padding:10px;" href="#" language='Arabic'>Ar</a>
+                <a style="padding:10px;" href="#" language='Francais'>Fr</a>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!--For Page-->
+  <div class="container">
+    <div class="py-5 text-center" style="width: 85%;">
+      <img class="d-block mx-auto mb-4" src="http://www.pngmart.com/files/7/Payment-Background-PNG.png" alt=""
+        width="180">
+      <h2 class="my-4 pt-2"><strong>Payment</strong></h2>
+
+    </div>
+
+    <div class="row" style="width: 95%;">
+      <div class="col-md-4 order-md-2 mb-4">
+        <ul class="list-group mb-3" id="tabFacture">
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong><span class="total"></span> DH</strong>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-8 order-md-1">
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <div class="md-form md-outline my-2">
+                <input type="text" id="name" class="form-control" required>
+                <label for="firstName">Full Name</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 mb-3">
+            </div>
+          </div>
+          <hr class="mb-4">
+
+          <h4 class="mb-3"><strong>Payment</strong></h4>
+
+          <div class="d-block my-3">
+            <div class="form-check pl-0">
+              <input id="name" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Credit card</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <div class="md-form md-outline my-2">
+                <input type="text" id="name" class="form-control" required>
+                <label for="cc-name">Name on card</label>
+                <small class="text-muted">Full name as displayed on card</small>
+              </div>
+            </div>
+            <div class="col-md-6 mb-2">
+              <div class="md-form md-outline my-2">
+                <input type="text" id="cardnumber" class="form-control" required>
+                <label for="cc-number">Credit card number</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-2">
+              <div class="md-form md-outline my-2">
+                <input type="text" id="expirationdate" class="form-control" required>
+                <label for="cc-expiration">Expiration</label>
+              </div>
+            </div>
+            <div class="col-md-3 mb-2">
+              <div class="md-form md-outline my-2">
+                <input type="text" id="securitycode" class="form-control" required>
+                <label for="cc-cvv">CVV</label>
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-warning btn-lg btn-block" id="pay" type="submit">Continue to checkout</button>
+      </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small"
+      style="width: 80%;color: black !important;margin-bottom: 0px !important;">
+      <p class="mb-1">&copy; 2021 SnackDelice</p>
+    </footer>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="Menus/Manu.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-a11y="true"></script>
+<script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="Back/payment.js"></script>
+<script src="js/axios.min.js"></script>
+<script src="Back/invoice.js"></script>
+<script src="Back/product.js"></script>
+
+</html>

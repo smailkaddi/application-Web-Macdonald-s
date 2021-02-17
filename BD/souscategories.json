@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "601febdb2eae6906444164e4"
+  },
+  "nom": "Default",
+  "category": {
+    "$oid": "601feb0c2eae6906444164dc"
+  },
+  "picname": "burger1"
+},{
+  "_id": {
+    "$oid": "601fec422eae6906444164ea"
+  },
+  "nom": "Menu chesse",
+  "category": {
+    "$oid": "601feb222eae6906444164de"
+  },
+  "picname": "burger1"
+},{
+  "_id": {
+    "$oid": "601fec4b2eae6906444164eb"
+  },
+  "nom": "Menu Burger",
+  "category": {
+    "$oid": "601feb222eae6906444164de"
+  },
+  "picname": "burger1"
+},{
+  "_id": {
+    "$oid": "601fec532eae6906444164ec"
+  },
+  "nom": "McNuggets",
+  "category": {
+    "$oid": "601feb222eae6906444164de"
+  },
+  "picname": "burger1"
+},{
+  "_id": {
+    "$oid": "6021d2ccb61218639c5ebd05"
+  },
+  "nom": "Salade Fruits",
+  "category": {
+    "$oid": "601feb2b2eae6906444164df"
+  },
+  "picname": "burger1"
+},{
+  "_id": {
+    "$oid": "6021d453b61218639c5ebd09"
+  },
+  "nom": "Salade Verte",
+  "category": {
+    "$oid": "601feb2b2eae6906444164df"
+  },
+  "picname": "burger1"
+},{
+  "_id": {
+    "$oid": "60242dc087136b5d949edd49"
+  },
+  "nom": "Salade Verte",
+  "picname": "burger1",
+  "category": {
+    "$oid": "601feb2b2eae6906444164df"
+  }
+}]

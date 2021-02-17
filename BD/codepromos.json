@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "602505340403d14cc028bd16"
+  },
+  "isValid": true,
+  "code": "AA123",
+  "pourcentage": 20
+},{
+  "_id": {
+    "$oid": "60250553b60ca91dfc9d574d"
+  },
+  "isValid": true,
+  "code": "AA123",
+  "pourcentage": 20
+}]
